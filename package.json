@@ -1,0 +1,18 @@
+{
+  "name": "devdeakin",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix client\" \"nodemon server/server.js\"",
+    "build": "npm run build --prefix client",
+    "start": "node server/server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "googleapis": "^144.0.0"
+  }
+}
